@@ -3,3 +3,120 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.main-container {
+	display:flex;
+	flex-direction: row;
+	margin-top: 35px;
+}
+
+h1 {
+	margin-top: 20px;
+	text-align: center;
+	font-family: "Pacifico", cursive;
+}
+
+h2,h3 {
+	font-family: "Caveat", cursive;
+  text-align: center;
+  color:rgb(246,227,220);
+}
+p {
+  font-family: "Lato", sans-serif;
+  color:rgb(246,227,220);
+}
+html {
+	background-color:rgb(247,229,223);
+}
+
+.day-1, .day-15 {
+	background-color: rgb(108,92,122);
+	padding: 20px;
+	height: 30rem;
+	align-self: center;
+	font-size: 1.1rem;
+	box-shadow:
+}
+
+.day-1 {
+	margin-left: 20px;
+}
+
+.day-15 {
+	margin-right: 20px;
+}
+
+.day-30 {
+	background-color: rgb(190,109,132);
+	padding: 20px;
+	height: 35rem;
+	font-size: 1.1rem;
+}
+
+.post-container {
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+	.main-container {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.day-30 {
+		order:1;
+		width: 100%;
+		height: inherit;
+		margin-bottom: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.day-1 {
+		order:2;
+		width: 45%;
+	}
+
+	.day-15 {
+		order:3;
+		width:45%;
+	}
+
+
+}
+
+@media screen and (max-width: 667px) {
+	.main-container {
+		display: flex;
+		flex-direction: column;
+		margin-left: 20px;
+		margin-right: 30px;
+	}
+
+	.day-1 {
+		order:3;
+		width: 100%;
+		height:inherit;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 15px;
+	}
+
+	.day-15 {
+		order:2;
+		width: 100%;
+		height: inherit;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 15px;
+	}
+
+	.day-30 {
+		order:1;
+		width: 100%;
+		height: inherit;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 15px;
+	}
+}
